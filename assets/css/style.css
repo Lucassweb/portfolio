@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+}
+
+.barra-lateral {
+    width: 20%; /* Largura */
+    height: 100%; /* Altura */
+    position: fixed; /* fix o contéudo */
+    background-color: blueviolet;
+}
+
+.barra-lateral-pos {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+.barra-lateral-img {text-align: center;}
+
+.barra-lateral-img img {
+    width: 50%;
+    border: 8px solid #9f51e6;
+    border-radius: 50%;
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    opacity: 0.4; /* texto fica invisivel */
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.menu a.selecionar {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+}
+
+section.descricao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.descricao > h2 {
+    color: #343a40;
+    font-size: 46px;
+}
+
+section.descricao h2 > span, 
+section.descricao h3 > span
+{
+
+    color: #9f51e6;
+}
+
+section.descricao h3 > span {
+    cursor: pointer;
+}
+
+section.descricao h3 {
+    margin: 15px 0;
+    
+    font-size: 26px;
+}
+
+section.descricao p {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #6c757d;
+}   
